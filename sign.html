@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sign Editor</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Sign Editor</h1>
+        <div id="formContiner">
+            <form>
+                <label for="stationName">Station Name:</label>
+                <input type="text" id="stationName" placeholder="Station Name" />
+
+                <label for="lineName">Line Name:</label>
+                <input type="text" id="lineName" placeholder="lineName" />
+
+                <label for="destName">Destination:</label>
+                <input type="text" id="destName" placeholder="destination" />
+            </form>
+        </div>
+
+        <div id="previewContainer">
+            <svg id="svgCanvas" viewBox="0 0 800 200">
+                <text id="stationText" x="400" y="70" font-size="40" text-anchor="middle">Station Name</text>
+                <text id="lineText" x="400" y="120" font-size="30" text-anchor="middle">Line Name</text>
+                <text id="destText" x="400" y="170" font-size="30" text-anchor="middle">Destination</text>
+            </svg>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
